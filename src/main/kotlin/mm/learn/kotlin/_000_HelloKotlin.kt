@@ -1,7 +1,7 @@
 package mm.learn.kotlin
 
 /**
- * Descriptions：
+ * Descriptions：Kotlin 的基本语法、简单函数、基本数据类型
  * <p>
  * Author：ChenME
  * Date：2018/7/20

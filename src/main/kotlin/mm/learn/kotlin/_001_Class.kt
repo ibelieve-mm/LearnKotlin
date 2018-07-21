@@ -1,7 +1,7 @@
 package mm.learn.kotlin
 
 /**
- * Descriptions：
+ * Descriptions：Kotlin 中的类与对象
  * <p>
  * Author：ChenME
  * Date：2018/7/20
