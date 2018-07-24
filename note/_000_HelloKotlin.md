@@ -4,8 +4,8 @@
 
 ### 1. 语法
 
-1. 不需要使用分号作为语句结束，直接 enter 就可以；
-2. 定义一个简单的变量：
+#### 1. 不需要使用分号作为语句结束，直接 enter 就可以；
+#### 2. 定义一个简单的变量：
 
 ```
 val aBoolean: Boolean = false
@@ -13,16 +13,29 @@ val aBoolean: Boolean = false
 var bBoolean: Boolean = true
 bBoolean = false
 ```
-> `val` 定义一个常量，一旦赋值就不能第二次赋值了，类似于Java中的 `final`；当然还可以这样写
-```
-val aBoolean: Boolean
-aBoolean=false
-```
-> 1. `var` 定义一个变量；
-> 2. `aBoolean` `bBoolean` 变量名；
-> 3. `Boolean` 变量类型，注意与变量名之间用 `:` 隔开；
+> 1. `val` 定义一个常量，一旦赋值就不能第二次赋值了，类似于Java中的 `final`；当然还可以这样写
+> + 注意区别：Java 中 `final` 是编译期常量，就是在编译阶段已经将 `final` 修饰的常量换成了它所对应的值，很像 c++ 中的 `宏`；
+> + 而 Kotlin 中的 `val` 并不是编译期常量，编译器在编译的时候还是用的引用，并不会拿常量值去替换，如果在 `val` 前面添加一个 `const` 就和 Java 中的 `final` 修饰的是等价的，即
 
-3. 简单的函数
+```
+const val aBoolean: Boolean = false
+```
+
+```
+val aBoolean = false
+
+// 或者是这样
+val aBoolean: Boolean
+aBoolean = false
+```
+> 2. `var` 定义一个变量；
+> 3. `aBoolean` `bBoolean` 变量名；
+> 4. `Boolean` 变量类型，注意与变量名之间用 `:` 隔开；
+> 5. 其实在直接赋值的情况下，编译器是可以推断出变量的类型的，此时可是可以省略 `: Boolean` 这个类型声明；
+
+#### 3. 简单的函数
+
+1. 主函数
 
 ```
 fun main(args: Array<String>) {
@@ -43,6 +56,99 @@ fun main(args: Array<String>): Unit {
 }
 ```
 > 返回值放在参数列表后面，用 `:` 与参数列表隔开；
+
+2. 在 Kotlin 中函数还可以更简洁，先看一个例子
+
+```
+fun sum(arg1: Int, arg2: Int): Int {
+    return arg1 + arg2
+}
+
+// sum(1, 2) // 3
+```
+
+> 1. 这是一个简单的求和函数，上面是规规矩矩的写法，其实我们可以写成
+
+```
+fun sum(arg1: Int, arg2: Int): Int = arg1 + arg2
+
+// sum(1, 2) // 3
+```
+
+> 2. 更灵活就是，还可以用一个变量去接收匿名函数，类似于 c 中的函数指针
+
+```
+val vSum = fun(arg1: Int, arg2: Int): Int = arg1 + arg2
+
+// vSum(1, 2) // 3
+```
+
+> 3. 如果接触过 lambda 表达式，还可以写成这样
+
+```
+val vSum = { arg1: Int, arg2: Int -> arg1 + arg2 }
+
+// vSum(1, 2) // 3
+```
+
++ 如果函数体内容很多呢
+
+```
+val vSum = { arg1: Int, arg2: Int ->
+    println("$arg1 + $arg2 = ${arg1 + arg2}")
+    arg1 + arg2
+}
+
+// vSum(1, 2) // 3
+```
+
++ 又如果没有返回值呢
+
+```
+val sayHello = { println("Hello Lambda") }
+
+// sayHello() // Hello Lambda
+```
++ 提到 lambda 表达式，要看一下数组的遍历
+
+```
+val array = arrayOf("Tom", 1, "Jerry")
+for (it in array) {
+    print("$it ")
+}
+// Tom 1 Jerry
+```
+
++ 这是之前的数组遍历，如果换成 lambda 表达式呢，使用数组提供的一个 forEach 函数
+
+```
+array.forEach { print("$it ") }
+```
+
++ 注意这里必须使用 `it` 来指代元素，why？因为传入的是一个参数，可以省略，省略后，编译器默认用 `it` 指代。那将这段代码还原一下
+
+```
+array.forEach({ element -> print("$element ") })
+```
+
++ 其实在 Kotlin 中，如果函数的最后一个参数是 lambda 表达式，我们还可以将小括号提到大括号前面写，于是就变成了这样
+
+```
+array.forEach(){ element -> print("$element ") }
+```
+
++ 由于除了最后一个参数是 lambda 表达式外，前面再没有其他参数（小括号中没有参数），所以小括号也可以省略
+
+```
+array.forEach{ element -> print("$element ") }
+```
+
++ 上面也提到了，lambda 表达式中只有一个参数是可以省略的，所以
+
+```
+array.forEach { print("$it ") }
+```
+
 
 ---
 

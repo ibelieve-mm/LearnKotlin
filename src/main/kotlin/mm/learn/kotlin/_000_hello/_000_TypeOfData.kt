@@ -1,4 +1,4 @@
-package mm.learn.kotlin
+package mm.learn.kotlin._000_hello
 
 /**
  * Descriptions：Kotlin 的基本语法、简单函数、基本数据类型
@@ -9,10 +9,15 @@ package mm.learn.kotlin
  */
 
 
+//val aBoolean: Boolean = false
+//const val aBoolean: Boolean = false
+
+
 fun main(args: Array<String>): Unit {
 
     val aBoolean: Boolean
     aBoolean = false
+
 
     var bBoolean: Boolean = true
     bBoolean = false
@@ -86,7 +91,7 @@ fun main(args: Array<String>): Unit {
     val moneyString2: String = "$$money" // $1000
     val moneyString3: String = "\$money" // $money
 
-    val originalString:String = """用三个双引号可以表示原始字符串；
+    val originalString: String = """用三个双引号可以表示原始字符串；
         反斜杠 \ 也不再表示转义了，所以 \n 也不再表示换行了，直接用回车换行；
         并且字符串模板仍然被支持，$money，由于没有办法被转义，所有只能这样写 $ money；
         """
