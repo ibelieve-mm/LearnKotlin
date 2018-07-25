@@ -1,4 +1,4 @@
-package mm.learn.kotlin
+package mm.learn.kotlin._003_type_cast
 
 /**
  * Descriptions：Kotlin 中的智能类型转换
@@ -7,8 +7,8 @@ package mm.learn.kotlin
  * Date：2018/7/21
  * Email：ibelieve1210@163.com
  */
-import mm.learn.kotlin._003_TypeCastJava.Person
-import mm.learn.kotlin._003_TypeCastJava.Student
+import mm.learn.kotlin._003_type_cast._003_TypeCastJava.Person
+import mm.learn.kotlin._003_type_cast._003_TypeCastJava.Student
 
 fun main(args: Array<String>) {
 

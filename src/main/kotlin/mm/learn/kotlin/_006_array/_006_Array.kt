@@ -1,4 +1,4 @@
-package mm.learn.kotlin
+package mm.learn.kotlin._006_array
 
 /**
  * Descriptions：
@@ -17,7 +17,7 @@ val len:Int = intArray.size // 4
 fun main(args: Array<String>) {
     println(len)
 
-    for(char in charArray ){
+    for(char in charArray){
         print("$char, ")
     } // H, e, l, l, o,  , K, o, t, l, i, n,
 

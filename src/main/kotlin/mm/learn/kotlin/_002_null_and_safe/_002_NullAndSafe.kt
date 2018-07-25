@@ -1,4 +1,4 @@
-package mm.learn.kotlin
+package mm.learn.kotlin._002_null_and_safe
 
 /**
  * Descriptions： Kotlin 中的类型安全（对空指针的优化处理）
