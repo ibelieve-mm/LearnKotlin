@@ -10,3 +10,4 @@ Kotlin的学习
 5. [Kotlin 中的包](https://www.jianshu.com/p/39d50c584c78)
 6. [Kotlin Range](https://www.jianshu.com/p/c6aec2287cd6)
 7. [Kotlin 中的数组](https://www.jianshu.com/p/2a5cf4af1276)
+8. [Kotlin 中的函数](https://www.jianshu.com/p/49525b0a179d)

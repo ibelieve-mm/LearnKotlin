@@ -35,7 +35,7 @@ aBoolean = false
 
 #### 3. 简单的函数
 
-1. 主函数
+1. 这里先简单看一下主函数
 
 ```
 fun main(args: Array<String>) {
@@ -57,100 +57,8 @@ fun main(args: Array<String>): Unit {
 ```
 > 返回值放在参数列表后面，用 `:` 与参数列表隔开；
 
-2. 在 Kotlin 中函数还可以更简洁，先看一个例子
-
-```
-fun sum(arg1: Int, arg2: Int): Int {
-    return arg1 + arg2
-}
-
-// sum(1, 2) // 3
-```
-
-> 1. 这是一个简单的求和函数，上面是规规矩矩的写法，其实我们可以写成
-
-```
-fun sum(arg1: Int, arg2: Int): Int = arg1 + arg2
-
-// sum(1, 2) // 3
-```
-
-> 2. 更灵活就是，还可以用一个变量去接收匿名函数，类似于 c 中的函数指针
-
-```
-val vSum = fun(arg1: Int, arg2: Int): Int = arg1 + arg2
-
-// vSum(1, 2) // 3
-```
-
-> 3. 如果接触过 lambda 表达式，还可以写成这样
-
-```
-val vSum = { arg1: Int, arg2: Int -> arg1 + arg2 }
-
-// vSum(1, 2) // 3
-```
-
-+ 如果函数体内容很多呢
-
-```
-val vSum = { arg1: Int, arg2: Int ->
-    println("$arg1 + $arg2 = ${arg1 + arg2}")
-    arg1 + arg2
-}
-
-// vSum(1, 2) // 3
-```
-
-+ 又如果没有返回值呢
-
-```
-val sayHello = { println("Hello Lambda") }
-
-// sayHello() // Hello Lambda
-```
-+ 提到 lambda 表达式，要看一下数组的遍历
-
-```
-val array = arrayOf("Tom", 1, "Jerry")
-for (it in array) {
-    print("$it ")
-}
-// Tom 1 Jerry
-```
-
-+ 这是之前的数组遍历，如果换成 lambda 表达式呢，使用数组提供的一个 forEach 函数
-
-```
-array.forEach { print("$it ") }
-```
-
-+ 注意这里必须使用 `it` 来指代元素，why？因为传入的是一个参数，可以省略，省略后，编译器默认用 `it` 指代。那将这段代码还原一下
-
-```
-array.forEach({ element -> print("$element ") })
-```
-
-+ 其实在 Kotlin 中，如果函数的最后一个参数是 lambda 表达式，我们还可以将小括号提到大括号前面写，于是就变成了这样
-
-```
-array.forEach(){ element -> print("$element ") }
-```
-
-+ 由于除了最后一个参数是 lambda 表达式外，前面再没有其他参数（小括号中没有参数），所以小括号也可以省略
-
-```
-array.forEach{ element -> print("$element ") }
-```
-
-+ 上面也提到了，lambda 表达式中只有一个参数是可以省略的，所以
-
-```
-array.forEach { print("$it ") }
-```
-
-
----
+2. 关于函数更多内容，[Kotlin 中的函数](https://www.jianshu.com/p/49525b0a179d)
+----------------
 
 ### 2. 基本数据类型
 
