@@ -1,4 +1,4 @@
-package mm.learn.kotlin
+package mm.learn.kotlin._001_class
 
 /**
  * Descriptions：Kotlin 中的类与对象
