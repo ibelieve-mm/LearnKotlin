@@ -1,7 +1,7 @@
 package mm.learn.kotlin._007_function
 
 /**
- * Descriptions：Kotlin 中的函数2 - 中缀函数
+ * Descriptions：Kotlin 函数2 - 中缀函数
  * <p>
  * Author：ChenME
  * Date：2018/7/26
