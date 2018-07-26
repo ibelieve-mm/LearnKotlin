@@ -1,4 +1,4 @@
-## Kotlin 中的函数0 - 基本函数以及 lambda 表达式
+## Kotlin 函数0 - 基本函数以及 lambda 表达式
 
 ---
 
