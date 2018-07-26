@@ -1,7 +1,7 @@
-package mm.learn.kotlin._000_hello
+package mm.learn.kotlin._007_function
 
 /**
- * Descriptions：函数
+ * Descriptions：Kotlin 中的函数0 - 基本函数以及 lambda 表达式
  * <p>
  * Author：ChenME
  * Date：2018/7/24

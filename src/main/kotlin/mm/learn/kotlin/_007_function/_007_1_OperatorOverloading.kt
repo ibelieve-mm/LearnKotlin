@@ -1,7 +1,7 @@
-package mm.learn.kotlin._007_operator_overloading
+package mm.learn.kotlin._007_function
 
 /**
- * Descriptions：运算符重载
+ * Descriptions：Kotlin 中的函数1 - 运算符重载
  * <p>
  * Author：ChenME
  * Date：2018/7/25
