@@ -1,13 +1,13 @@
 package mm.learn.kotlin._008_expression;
 
 /**
- * Descriptions：Kotlin 各种表达式
+ * Descriptions：Kotlin 分支
  * <p>
  * Author：ChenME
  * Date：2018/7/26
  * Email：ibelieve1210@163.com
  */
-class _008_Expression {
+class _008_Branch {
 
 
     public static void main(String[] args) {

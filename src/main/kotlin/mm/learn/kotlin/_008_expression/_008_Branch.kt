@@ -1,7 +1,7 @@
 package mm.learn.kotlin._008_expression
 
 /**
- * Descriptions：Kotlin 表达式
+ * Descriptions：Kotlin 分支
  * <p>
  * Author：ChenME
  * Date：2018/7/26
