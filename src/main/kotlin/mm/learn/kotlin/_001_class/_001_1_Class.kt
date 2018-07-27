@@ -1,7 +1,7 @@
 package mm.learn.kotlin._001_class
 
 /**
- * Descriptions：Kotlin 类与对象
+ * Descriptions：类1 - 类与对象(实例)
  * <p>
  * Author：ChenME
  * Date：2018/7/20

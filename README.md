@@ -4,8 +4,9 @@ Kotlin的学习
 [项目地址](https://github.com/ibelieve-mm/LearnKotlin)
 
 1. [Kotlin 基本语法、简单函数、基本数据类型](https://www.jianshu.com/p/b03b76e3a8de)
-2. [Kotlin 类与对象0](https://www.jianshu.com/p/a7416c2897cc)
-3. [Kotlin 类与对象1](https://www.jianshu.com/p/1dc6c771d853)
+2. [Kotlin 类0 - 类的简单使用](https://www.jianshu.com/p/a7416c2897cc)
+3. [Kotlin 类1 - 类与对象(实例)](https://www.jianshu.com/p/1dc6c771d853)
+3. [Kotlin 类2 - 抽象类与接口](https://www.jianshu.com/p/f35fc203b6b0)
 4. [Kotlin 类型安全（对空指针的优化处理）](https://www.jianshu.com/p/68927b1790b4)
 5. [Kotlin 智能类型转换](https://www.jianshu.com/p/12b3ba1960ea)
 6. [Kotlin 包](https://www.jianshu.com/p/39d50c584c78)
@@ -17,3 +18,4 @@ Kotlin的学习
 11. [Kotlin 函数3 - 具名参数，变长参数，默认参数](https://www.jianshu.com/p/8acce53acdf4)
 12. [Kotlin 分支](https://www.jianshu.com/p/6e23127824cb)
 13. [Kotlin 循环](https://www.jianshu.com/p/2ae7369c07a9)
+
