@@ -9,6 +9,7 @@ Kotlin的学习
 3. [Kotlin 类2 - 抽象类与接口](https://www.jianshu.com/p/f35fc203b6b0)
 3. [Kotlin 类3 - 类及其成员的可见性](https://www.jianshu.com/p/df8aa855099d)
 3. [Kotlin 类4 - 伴生对象与静态成员](https://www.jianshu.com/p/932bba217cab)
+3. [Kotlin 类5 - Data Class](https://www.jianshu.com/p/90a3233b0a8a)
 4. [Kotlin 类型安全（对空指针的优化处理）](https://www.jianshu.com/p/68927b1790b4)
 5. [Kotlin 智能类型转换](https://www.jianshu.com/p/12b3ba1960ea)
 6. [Kotlin 包](https://www.jianshu.com/p/39d50c584c78)
