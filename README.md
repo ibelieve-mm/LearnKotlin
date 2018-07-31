@@ -22,6 +22,7 @@ Kotlin的学习
 11. [Kotlin 函数3 - 具名参数，变长参数，默认参数](https://www.jianshu.com/p/8acce53acdf4)
 11. [Kotlin 函数4 - 函数重载与默认参数](https://www.jianshu.com/p/f726e3b5bd00)
 11. [Kotlin 函数5 - 扩展函数](https://www.jianshu.com/p/397666eee260)
+11. [Kotlin 函数6 - 高阶函数](https://www.jianshu.com/p/719fc73edb28)
 12. [Kotlin 分支](https://www.jianshu.com/p/6e23127824cb)
 13. [Kotlin 循环](https://www.jianshu.com/p/2ae7369c07a9)
 
